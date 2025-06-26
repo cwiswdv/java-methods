@@ -554,7 +554,7 @@ public class DerivedFromIntermediate : IntermediateClass
     {
         if (b == 0)
         {
-            throw new ArgumentException("Cannot divide by zero.", nameof(b));
+            throw new ArgumentException("Cannot divide by zero.", "b");
         }
         quotient = a / b;
         remainder = a % b;
@@ -792,8 +792,8 @@ public class EventSubscriber
                 return <DelegatesFunctionalInterfaces />;
             default:
                 return <BasicMethodDefinition />;
-        }
-    };
+    }
+  };
   return (
         <div className="font-sans bg-gray-50 min-h-screen flex flex-col lg:flex-row">
             {/* Navigation Sidebar */}
